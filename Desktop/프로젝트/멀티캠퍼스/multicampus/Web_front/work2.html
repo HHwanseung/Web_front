@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            background-color: aqua;
+            text-align: left;
+            padding: 10px;
+        }
+        .yellow{
+            background-color: yellow;
+            text-align: right;
+        }
+        .button{
+            margin-left: auto;
+        }
+        .que {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <table>
+            <form>
+                <tr>
+                    <th class="blue" colspan="2">아이디(ID정보)</th>
+                </tr>
+                <tr>
+                    <td class="yellow" rowspan="2" class="text2">* 아이디</td>
+                    <td>
+                        <input type="text" id="id"> <button>중복검사</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="que">
+                        (4~12자 영자/숫자 가능. 한글, 특수문자는 ID로 사용할 수 없습니다.)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="yellow">* 비밀번호</td>
+                    <td class="text">
+                        <input type="password" id="que"> (4~8자 이내로 만들어주세요.)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="yellow">* 비밀번호 확인</td>
+                    <td>
+                        <input type="password">
+                        <a class="text" id="que"> (위 번호와 같이 입력해주세요.)
+                    </td>
+                </tr>
+                <tr>
+                    <th class="blue" colspan="2">개인정보</th>
+                </tr>
+                <tr>
+                    <td class="yellow">* 이름(한글)</td>
+                    <td class="que"><input type="text" id="name"> (예: 박정현)</td>
+                </tr>
+                <tr>
+                    <td class="yellow">생년월일</td>
+                    <td><input type="date" id="birth"><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="yellow">* 주소</td>
+                    <td><input type="text" id="address"> <button>우편번호 찾기</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="address2"></td>
+                </tr>
+                <tr>
+                    <td class="yellow"><label for="phone">* 전화번호</label></td>
+                    <td><label for="phone" id="phone">핸드폰 </label> <input type="text">
+                        <input type="radio" name="data" id="skt">SKT
+                        <input type="radio" name="data" id="kt">KT
+                        <input type="radio" name="data" id="lgt">LGT
+                    </td>
+                </tr>
+                <tr>
+                    <td class="yellow">이메일</td>
+                    <td><input type="text" id="email"></td>
+                </tr>
+                <tr>
+                    <td class="yellow">가입인사</td>
+                    <td><textarea id="hi"></textarea></td>
+                </tr>
+            </table>
+            <br>
+            <div class="button">
+                <input type="submit" id="submit" value="확인">
+                <input type="reset" id="reset" value="다시입력">
+            </div>
+            </form>
+        </table>
+    </div>
+</body>
+</html>

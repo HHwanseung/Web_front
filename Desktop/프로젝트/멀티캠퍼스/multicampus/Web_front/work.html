@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+        }
+        ul>li {
+            list-style: none;
+            float: left;
+            width: 90px;
+            padding: 1em;
+            height: 20px;
+            margin-bottom: 1em;
+            text-align: center;
+            padding: 1.5em;
+        }
+        ul {
+            background-color:chartreuse;
+            height: 100px;
+        }
+
+        a:link{
+            text-decoration: none;
+            font-size: 25px;
+        }
+        a{
+            color: red;
+        }
+
+        #mango {
+            background-color: black;
+            color: yellow;
+            float: right;
+            text-align: center;
+            width: 150px;
+            height: 30px;
+    
+        }
+        .table1 {
+            background-image: url(과제이미지/flower.png);
+            height: 500px;
+        }
+        table{
+            margin-left: 40%;
+            font-size: 30px;
+            height: 400px;
+        }
+        tr>td {
+            text-align: center;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: orange;
+        }
+        li:nth-child(2n) {
+            background-color: pink;
+        }
+        li:nth-child(4) {
+            border-radius: 0 25px 25px 0;
+        }
+        li:first-child{
+            border-radius: 25px 0 0 25px;
+        }
+        li:last-child {
+            border-radius: 150px 20px;
+        }
+
+       td.row{
+        background-color: pink;
+        color: blue;
+       }
+       .col {
+        background-color:white;
+        color: blue;
+       }
+       .col2{
+        background-color: white;
+        color: red;
+       }
+       #basket{
+        display: block;
+        margin: auto;
+        width: 200px;
+       }
+       #img1{
+        width: 150px;
+       }
+        
+    </style>
+</head>
+<body>
+    <div id="cate">
+        <ul>
+            <li><a href="work2.html">회원가입</a></li>
+            <li><a href="">제품정보</a></li>
+            <li><a href="">게시판</a></li>
+            <li><a href="">장바구니</a></li>
+            <li id="mango">장바구니 들어가는 부분</li>
+        </ul>
+    </div>
+    <div class="table1">
+        <table>
+            <tr>
+                <td class="row">제품번호</td>
+                <td class="col">100</td>
+            </tr>
+            <tr>
+                <td class="row">제품이름</td>
+                <td class="col2">shoes1</td>
+            </tr>
+            <tr>
+                <td class="row">제품설명</td>
+                <td class="col">fun shoes1</td>
+            </tr>
+            <tr>
+                <td class="row">제품가격</td>
+                <td class="col">1000</td>
+            </tr>
+            <tr>
+                <td class="row">제조회사</td>
+                <td class="col">c100</td>
+            </tr>
+            <tr>
+                <td class="row">제품이미지</td>
+                <td class="col"><img id="img1" src="과제이미지/빵.png"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div>
+        <img src="과제이미지/장바구니.png" alt="장바구니" id="basket">
+    </div>
+</body>
+</html>
