@@ -1,0 +1,18 @@
+Host colima
+  IdentityFile "/Users/hhwanseung/.lima/_config/user"
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+  NoHostAuthenticationForLocalhost yes
+  GSSAPIAuthentication no
+  PreferredAuthentications publickey
+  Compression no
+  BatchMode yes
+  IdentitiesOnly yes
+  Ciphers "^aes128-gcm@openssh.com,aes256-gcm@openssh.com"
+  User hhwanseung
+  ControlMaster auto
+  ControlPath "/Users/hhwanseung/.lima/colima/ssh.sock"
+  ControlPersist 5m
+  Hostname 127.0.0.1
+  Port 50562
+
